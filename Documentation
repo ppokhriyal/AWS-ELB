@@ -1,0 +1,26 @@
+Elastic Load Balancing
+======================
+
+- Elastic Load Balancing automatically distributes the incoming traffic to
+  attached targets such as EC2,Container and IP addresses in one or more availability zones.
+
+- It monitors the health of the attached targets and route the incoming traffic to the
+  healthy targets.
+  If the attached target is un-healthy,it will stop routing the traffic to that un-healthy target
+  until it is healthy again
+
+- It automatically scale the load balancer as the incoming traffic changes over the time.
+
+
+Types of Load Balancers
+=======================
+
+- Application Load Balancer
+- Network Load Balancer
+- Gateway Load Balancer
+- Classic Load Balancer
+
+The key difference in how load balancers are configured with Application,Network,Gateway,you register targets in target groups
+and route the traffic to that target group.
+
+With Classic load balancer,instance are registered with load balancer
